@@ -1,0 +1,318 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://ParallaxBackground.gd" type="Script" id=1]
+[ext_resource path="res://GameScenes/BackgroundAssets/smallStars.png" type="Texture" id=2]
+[ext_resource path="res://GameScenes/BackgroundAssets/medStars.png" type="Texture" id=3]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar1.png" type="Texture" id=4]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar2.png" type="Texture" id=5]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar3.png" type="Texture" id=6]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar4.png" type="Texture" id=7]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar5.png" type="Texture" id=8]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar6.png" type="Texture" id=9]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar7.png" type="Texture" id=10]
+[ext_resource path="res://GameScenes/BackgroundAssets/orangeBigStar/orangeBigStar8.png" type="Texture" id=11]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar1.png" type="Texture" id=12]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar2.png" type="Texture" id=13]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar3.png" type="Texture" id=14]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar4.png" type="Texture" id=15]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar5.png" type="Texture" id=16]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar6.png" type="Texture" id=17]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar7.png" type="Texture" id=18]
+[ext_resource path="res://GameScenes/BackgroundAssets/yellowBigStar/yellowBigStar8.png" type="Texture" id=19]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar1.png" type="Texture" id=20]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar2.png" type="Texture" id=21]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar3.png" type="Texture" id=22]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar4.png" type="Texture" id=23]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar5.png" type="Texture" id=24]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar6.png" type="Texture" id=25]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar7.png" type="Texture" id=26]
+[ext_resource path="res://GameScenes/BackgroundAssets/blueBigStar/blueBigStar8.png" type="Texture" id=27]
+[ext_resource path="res://GameScenes/BackgroundAssets/planet.png" type="Texture" id=28]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/01.png" type="Texture" id=29]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/02.png" type="Texture" id=30]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/03.png" type="Texture" id=31]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/04.png" type="Texture" id=32]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/05.png" type="Texture" id=33]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/06.png" type="Texture" id=34]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/07.png" type="Texture" id=35]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/08.png" type="Texture" id=36]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/09.png" type="Texture" id=37]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/10.png" type="Texture" id=38]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/11.png" type="Texture" id=39]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/12.png" type="Texture" id=40]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/13.png" type="Texture" id=41]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/14.png" type="Texture" id=42]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/15.png" type="Texture" id=43]
+[ext_resource path="res://GameScenes/BackgroundAssets/animatedStar/16.png" type="Texture" id=44]
+[ext_resource path="res://GameScenes/platform/platformTiles.res" type="TileSet" id=45]
+[ext_resource path="res://GameScenes/slimeBall/SlimeBall.tscn" type="PackedScene" id=46]
+[ext_resource path="res://GameScenes/player/player.tscn" type="PackedScene" id=47]
+[ext_resource path="res://GameScenes/cursor/cursor.tscn" type="PackedScene" id=48]
+[ext_resource path="res://GameScenes/JumpMeter/jumpMeter.tscn" type="PackedScene" id=49]
+[ext_resource path="res://GameScenes/levelProgress/LevelEnd.tscn" type="PackedScene" id=50]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "orangeStar",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "yellowStar",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "blueStar",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "starLoop",
+"speed": 5.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[node name="Node" type="Node" index="0"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
+script = ExtResource( 1 )
+_sections_unfolded = [ "Scroll" ]
+
+[node name="smallStarsParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+editor/display_folded = true
+motion_scale = Vector2( 0.01, 0.01 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="smallStars" type="Sprite" parent="ParallaxBackground/smallStarsParallaxLayer" index="0"]
+
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( -2000, -2000, 2000, 2000 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="medStarsParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="1"]
+
+editor/display_folded = true
+motion_scale = Vector2( 0.05, 0.05 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="smallStars2" type="Sprite" parent="ParallaxBackground/medStarsParallaxLayer" index="0"]
+
+scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -2000, -2000, 2000, 2000 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="bigStarsParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="2"]
+
+editor/display_folded = true
+motion_scale = Vector2( 0.075, 0.075 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="0"]
+
+position = Vector2( 560, -80 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "blueStar"
+frame = 2
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="1"]
+
+position = Vector2( 928, 304 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "orangeStar"
+frame = 7
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="2"]
+
+position = Vector2( 112, 688 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "yellowStar"
+frame = 7
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="3"]
+
+position = Vector2( 976, 1248 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "blueStar"
+frame = 2
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="4"]
+
+position = Vector2( 1760, 160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "blueStar"
+frame = 2
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="5"]
+
+position = Vector2( 1872, 880 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "orangeStar"
+frame = 3
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="6"]
+
+position = Vector2( 2336, 320 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "yellowStar"
+frame = 4
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="ParallaxBackground/bigStarsParallaxLayer" index="7"]
+
+position = Vector2( -224, 384 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "blueStar"
+frame = 4
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="planetParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="3"]
+
+editor/display_folded = true
+visible = false
+motion_scale = Vector2( 0.1, 0.1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="planet" type="Sprite" parent="ParallaxBackground/planetParallaxLayer" index="0"]
+
+position = Vector2( -160, 16 )
+scale = Vector2( 2.75, 2.75 )
+texture = ExtResource( 28 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+
+[node name="sunParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="4"]
+
+editor/display_folded = true
+motion_scale = Vector2( 0.3, 0.3 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion", "Transform" ]
+
+[node name="animatedStar" type="AnimatedSprite" parent="ParallaxBackground/sunParallaxLayer" index="0"]
+
+position = Vector2( -640, -400 )
+scale = Vector2( 10, 10 )
+frames = SubResource( 2 )
+animation = "starLoop"
+frame = 5
+playing = true
+centered = false
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="TileMap" type="TileMap" parent="." index="1"]
+
+scale = Vector2( 2, 2 )
+mode = 0
+tile_set = ExtResource( 45 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Platforms" type="Node" parent="." index="2"]
+
+[node name="SlimeBalls" type="Node" parent="." index="3"]
+
+[node name="SlimeBall" parent="SlimeBalls" index="0" instance=ExtResource( 46 )]
+
+position = Vector2( 368, 496 )
+
+[node name="player" parent="." index="4" instance=ExtResource( 47 )]
+
+position = Vector2( 223.08, 499.312 )
+playerMoveSpeed = 350.0
+jumpMoveSpeed = 600.0
+
+[node name="Cursor" parent="." index="5" instance=ExtResource( 48 )]
+
+position = Vector2( 105.962, 36.6153 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="6"]
+
+editor/display_folded = true
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="JumpMeter" parent="CanvasLayer" index="0" instance=ExtResource( 49 )]
+
+position = Vector2( 0, -16 )
+
+[node name="LevelEnd" parent="." index="7" instance=ExtResource( 50 )]
+
+position = Vector2( 496, 448 )
+
+[connection signal="next_jump_update" from="player" to="CanvasLayer/JumpMeter" method="_on_player_next_jump_update"]
+
+[connection signal="cursor_move" from="Cursor" to="player" method="_on_Cursor_cursor_move"]
+
+
